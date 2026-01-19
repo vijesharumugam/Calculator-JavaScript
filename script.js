@@ -19,6 +19,12 @@ function clearAll() {
   updateDisplay("");
 }
 
+function deleteLast() {
+  if (currentOperand === "") return;
+  currentOperand = currentOperand.slice(0, -1);
+  updateDisplay(currentOperand);
+}
+
 function appendNumber(num) {
   if (num === "." && currentOperand.includes(".")) return;
   if (num !== "." && currentOperand === "0") {
@@ -114,6 +120,14 @@ document.addEventListener("keydown", (e) => {
   }
   if (key === "Enter" || key === "=") {
     compute();
+    return;
+  }
+  if (key === "Backspace") {
+    deleteLast();
+    return;
+  }
+  if (key === "Delete") {
+    clearAll();
     return;
   }
   if (key === "Escape" || key.toLowerCase() === "c") {
