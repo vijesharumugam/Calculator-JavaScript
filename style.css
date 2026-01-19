@@ -12,7 +12,6 @@ body {
   justify-content: center;
 }
 
-/* Calculator box */
 .calculator {
   background: #020617;
   padding: 20px;
@@ -21,7 +20,6 @@ body {
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
 }
 
-/* Display */
 .display {
   margin-bottom: 15px;
 }
@@ -39,14 +37,14 @@ body {
   border-radius: 10px;
 }
 
-/* Buttons grid */
+
 .buttons {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 10px;
 }
 
-/* Common button */
+
 .btn {
   height: 55px;
   border: none;
@@ -60,7 +58,6 @@ body {
   transform: scale(0.95);
 }
 
-/* Number buttons */
 .number {
   background: #1e293b;
   color: #f8fafc;
@@ -70,7 +67,7 @@ body {
   background: #334155;
 }
 
-/* Operator buttons */
+
 .operator {
   background: #f59e0b;
   color: #020617;
@@ -92,7 +89,7 @@ body {
   background: #4ade80;
 }
 
-/* Clear button */
+
 .clear {
   background: #ef4444;
   color: white;
@@ -102,7 +99,6 @@ body {
   background: #f87171;
 }
 
-/* Zero button spans two columns */
 .zero {
   grid-column: span 2;
 }
